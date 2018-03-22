@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+	<formbeans>
+		<bean name = "panduan" class = "com.yu.mvc.bisness.PanduanForm"/>
+		<bean name ="user" class="com.yu.mvc.test.TForm"/>
+	</formbeans>
+	<action-mapping>
+		<action name="panduan" type="com.yu.mvc.bisness.PanduanAction" path="/panduan">
+			<forword name ="success" value="/view/success.jsp"></forword>
+			<forword name ="fail" value="/view/fail.jsp"></forword>
+		</action>
+		
+	    <action name="user" type="com.yu.mvc.test.TAction" path="/useradd">
+			<forword name ="success" value="/view/success.jsp"></forword>
+			<forword name ="fail" value="/view/fail.jsp"></forword>
+		</action>
+		
+	</action-mapping>
+	
+	
+</struts>
